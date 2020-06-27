@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#calculator{
+    text-align: center;
+}
+
+#interface{
+    border: 1px solid black;
+    display: inline-block;
+    margin-top: 5rem;
+    padding: 1rem;
+    border-radius: 30px;
+    background-color: lightseagreen;
+    min-width: 320px;
+}
+
+.btn{
+    padding: 0.1rem;
+    font-weight: bolder;
+    margin: 0.1rem;
+    border-radius: 50%;
+    border-width: 0px;
+    width: 22.8%;
+    background-color: white;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.btn:focus{
+    outline-width: 0px;
+}
+
+input[name="output"]{
+    width: 97%;
+    padding: 1.5rem 1rem 1.5rem 1rem;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border-width: 1px;
+    font-size: 2rem;
+}
+
+input[name="output"]:focus, #reset:focus{
+    outline-width: 0px;
+}
+
+#reset{
+    width: 97%;
+    padding: 1.2rem;
+    font-weight: bolder;
+    margin: 0.5rem;
+    border-radius: 30px;
+    border-width: 0px;
+    background-color: white;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 1rem;
+
+}
+
+}
+
+input[name="output"]::selection{
+    -moz-user-select: none;
+}
+
+.btn:hover, #reset:hover{
+    box-shadow: 0.1px 0.1px 5px 0.1px black;
+    transition-property: box-shadow;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+}
+
+
