@@ -62,10 +62,8 @@ input[name="output"]:focus, #reset:focus{
 
 }
 
-}
-
 input[name="output"]::selection{
-    -moz-user-select: none;
+    --moz-user-select: none;
 }
 
 .btn:hover, #reset:hover{
